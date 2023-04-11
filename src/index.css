@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+.buttons {
+    background: #242426;
+    border-radius: 14px;
+    color: #fff;
+    padding: 20px 30px;
+}
+
+.navis {
+    color: #DEC99C;
+    font-size: 18px;
+}
