@@ -17,3 +17,8 @@ html {
     color: #DEC99C;
     font-size: 18px;
 }
+
+.navis.active {
+    color: white;
+    font-weight: bold;
+}

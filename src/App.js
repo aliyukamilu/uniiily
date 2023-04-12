@@ -1,11 +1,13 @@
 import React from 'react';
 import './index.css'
 import { Footer, Schools } from './components/index'
+import { BsApple, BsAndroid } from 'react-icons/bs'
+
 
 function App() {
   return (
     <section>
-      <section className="bg-[#9900EF] text-white flex flex-col items-center justify-center min-h-screen" id='home'>
+      <section className="bg-[#9900EF] text-white flex flex-col items-center justify-center min-h-screen mainSection" id='home'>
         <img src={require("./assets/img/logo.png")} alt="" />
 
         <div className='flex justify-center'>
@@ -17,8 +19,14 @@ function App() {
         <div className='flex justify-center'>
 
           <div className='flex items-center gap-3 mt-10'>
-            <button className='buttons'>Download android</button>
-            <button className='buttons'>Download iOS</button>
+            <button className='buttons flex items-center gap-3'>
+              <BsAndroid />
+              <span>Download android</span>
+            </button>
+            <button className='buttons flex items-center gap-3'>
+              <BsApple />
+              <span>Download iOS</span>
+            </button>
           </div>
 
         </div>
@@ -28,7 +36,7 @@ function App() {
       </section>
 
 
-      <section className="bg-[#9900EF] text-white flex flex-col items-center justify-center min-h-screen">
+      <section className="bg-[#9900EF] text-white flex flex-col items-center justify-center min-h-screen mainSection" id='school'>
         <Schools />
       </section>
     </section>
